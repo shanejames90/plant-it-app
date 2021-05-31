@@ -1,4 +1,4 @@
-### Plant It! #
+# Plant It! 
 This is a plant growing simulation game. Enjoy! 
 
 # Getting Started with Create React App

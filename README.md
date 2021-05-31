@@ -1,6 +1,16 @@
 # Plant It! 
 This is a plant growing simulation game. Enjoy! 
 
+
+## User Stories #
+
+![Plant-It User Stories](./public/user_stories.png "Plant-It_User_Stories")
+
+## Wireframe #
+
+![Plant-It Wireframe](./public/wireframe.png "Plant-it_wireframe")
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

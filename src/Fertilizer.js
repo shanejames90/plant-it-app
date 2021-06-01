@@ -8,7 +8,7 @@ class Fertilizer extends Component {
         const { changeFertilizerLevel, level } = this.props
         return (
             <div>
-                <span>Fertilizer(lbs/week): {level}</span>
+                <span>Fertilizer(lbs/month): {level}</span>
                 <div className="slider">
                     <Slider defaultValue={level} min={0} max={4} step={0.25} onAfterChange={changeFertilizerLevel} />
                 </div>

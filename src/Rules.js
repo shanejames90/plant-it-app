@@ -4,7 +4,7 @@ class Rules extends Component {
     render() {
         return (
             <div>
-                <h3>How to play:</h3>
+                <h3 style={{ textAlign: 'center' }}>How to play:</h3>
                 <ul>
                     <li>1. Sun it: pick the amount of time in hours you want to have your sun lamps on in your greenhouse!</li>
                     <li>2. Water it: How much do you want to water your plants?</li>

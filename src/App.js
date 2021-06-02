@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Plant from './Plant'
 import Rules from './Rules'
 import './App.css'
+import PlantPalette from './PlantPalette'
 
 
 

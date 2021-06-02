@@ -51,9 +51,8 @@ class Plant extends Component {
         }
     }
 
-    render() {
-        const { sun, water, fertilizer, thrived } = this.state
-        if (thrived === true) {
+    congratulationsJSX = () => {
+        if (this.state.thrived === true) {
             return (
                 <div>
                     <h1>Congratulations your St. Auggy is healthy and thriving!</h1>
@@ -68,7 +67,11 @@ class Plant extends Component {
                     </div>
                 </div>
             )
-        } else if (thrived === false) {
+        }
+    }
+
+    failureJSX = () => {
+        if (this.state.thrived === false) {
             return (
                 <div>
                     <h1>Sorry, your St. Auggy is now dead, try again next season!</h1>
@@ -81,7 +84,14 @@ class Plant extends Component {
                         </Button>
                 </div>
             )
-        } else {
+        }
+    }
+    render() {
+        const { sun, water, fertilizer, thrived } = this.state
+            if (thrived === true) 
+                return (this.congratulationsJSX)
+             else if (thrived === false)
+                return (this.failureJSX)   
             return (
             <div>
                 <h3 style={{ textAlign: 'center' }}>🌱St. Augustine Grass🍃</h3>
@@ -109,6 +119,5 @@ class Plant extends Component {
             )
         }
     }
-}
 
 export default Plant;

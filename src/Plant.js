@@ -89,9 +89,9 @@ class Plant extends Component {
     render() {
         const { sun, water, fertilizer, thrived } = this.state
             if (thrived === true) 
-                return (this.congratulationsJSX)
+                return (this.congratulationsJSX())
              else if (thrived === false)
-                return (this.failureJSX)   
+                return (this.failureJSX())   
             return (
             <div>
                 <h3 style={{ textAlign: 'center' }}>🌱St. Augustine Grass🍃</h3>

@@ -47,4 +47,4 @@ const plants = [
 
 ]
 
-export default plants
+export default plants 

@@ -88,13 +88,14 @@ class Plant extends Component {
     }
     render() {
         const { sun, water, fertilizer, thrived } = this.state
+        const { name } = this.props.plant
             if (thrived === true) 
                 return (this.congratulationsJSX())
              else if (thrived === false)
                 return (this.failureJSX())   
             return (
             <div>
-                <h3 style={{ textAlign: 'center' }}>🌱St. Augustine Grass🍃</h3>
+                <h3 style={{ textAlign: 'center' }}>🌱{name}🍃</h3>
                 <div>
                     <div style={{ width: '35%', margin: 'auto', padding: '2%' }}>
                         <Sun level={sun} changeSunLevel={this.changeSunLevel} />

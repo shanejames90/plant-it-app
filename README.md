@@ -6,9 +6,12 @@ This is a plant growing simulation game. Enjoy!
 
 ![Plant-It User Stories](./public/user_stories.png "Plant-It_User_Stories")
 
-## Wireframe #
+## Wireframes #
 
 ![Plant-It Wireframe](./public/wireframe.png "Plant-it_wireframe")
+
+
+![Plant-It Wireframe_2](./public/lofi_wireframe_2.png "Plant-it_wireframe_2")
 
 
 # Getting Started with Create React App

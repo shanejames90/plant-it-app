@@ -4,9 +4,10 @@ import Plant from './Plant'
 
 class PlantPalette extends Component {
     render() {
+        const { allPlants } = this.props
         return (
             <div>
-                {plants.map(plant => <Plant key={plant.id} name={plant.name} /> )}
+                {allPlants.map(plant => <h1>{plant.name}</h1> )}
             </div>
         );
     }

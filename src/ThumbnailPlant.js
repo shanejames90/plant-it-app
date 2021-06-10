@@ -14,11 +14,13 @@ const styles = {
         }
     },
     picture: {
-        backgroundColor: 'white',
+        backgroundColor: 'transparent',
+        alignItems: 'center',
         height: '30vh',
         width: '100%',
         borderRadius: '5px',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        
     },
     title: {
         display: 'flex',

@@ -24,12 +24,13 @@ class App extends Component {
         <div className="game-container">
           <div className="plant-container">
             <Switch>
-              <Route exact path='/' 
-              render={() => <PlantPalette allPlants={plants} />}
-              />
-              <Route exact path='/plant/:id'
-              render={routeProps => <Plant plant={this.findPlantById(routeProps.match.params.id)}/>}
-               />
+              <Route exact path='/'
+                render={(routeProps) => <PlantPalette allPlants={plants} {...routeProps} />} />
+              <Route
+                exact
+                path='/plant/:id'
+                render={routeProps => <Plant plant={this.findPlant(routeProps.match.params.id)}
+                  {...routeProps} />} />
             </Switch>
           </div>
           <div className="rules-container">

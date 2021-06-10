@@ -11,11 +11,10 @@ import plants from './plantData';
 import PlantPalette from './PlantPalette'
 
 class App extends Component {
-  findPlantById(id) {
-     let foundPlant =plants.find(function (plant) {
-      return plant.id === parseInt(id)
+  findPlant(id) {
+    return plants.find(function (plant) {
+      return plant.id === id
     })
-    return foundPlant
   }
 
   render() {

@@ -19,36 +19,57 @@ const plants = [
         id: '3',
         name: 'gardenias',
         image: 'https://gardenersconfidence.com/media/uploads/plants/c/SPrincess_3_634_415_c1_l_t.png',
+        sun: [11, 12],
+        water: [2, 3, 4],
+        fertilizer: [0.25]
     },
     {
         id: '4',
         name: 'roses',
         image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rose-color-meanings-1578080496.png',
+        sun: [7, 8, 9],
+        water: [3, 4, 5],
+        fertilizer: [0.5]
     },
     {
         id: '5',
         name: 'Croton',
-        image: 'https://www.backyardboss.net/wp-content/uploads/2020/08/croton-bed-petra.png'
+        image: 'https://www.backyardboss.net/wp-content/uploads/2020/08/croton-bed-petra.png',
+        sun: [9, 10, 11, 12],
+        water: [1, 2, 3],
+        fertilizer: [0.25, 0.5]
     },
     {
         id: '6',
         name: 'Orchid',
-        image: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/naples-orchid-collage-gene-norris.jpg'
+        image: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/naples-orchid-collage-gene-norris.jpg',
+        sun: [8, 9, 10],
+        water: [3, 4],
+        fertilizer: [1.25, 1.50]
     },
     {
         id: '7',
         name: 'Dahlia',
-        image: 'https://www.shiftingroots.com/wp-content/uploads/2020/10/Screen-Shot-2020-10-24-at-8.20.10-AM-878x1024.png'
+        image: 'https://www.shiftingroots.com/wp-content/uploads/2020/10/Screen-Shot-2020-10-24-at-8.20.10-AM-878x1024.png',
+        sun: [6, 7],
+        water: [2, 3],
+        fertilizer: [0.25]
     },
     {
         id: '8',
         name: 'Delphinium',
-        image: 'https://tuigarden.co.nz/media/3135/delphinium_growing_guide.png'
+        image: 'https://tuigarden.co.nz/media/3135/delphinium_growing_guide.png',
+        sun: [11, 12],
+        water: [4, 5],
+        fertilizer: [0.5, 0.75]
     },
     {
         id: '9',
         name: 'Cypress',
-        image: 'https://buyevergreenshrubs.com/wp-content/uploads/2019/01/cypresses-ave-web.jpg'
+        image: 'https://buyevergreenshrubs.com/wp-content/uploads/2019/01/cypresses-ave-web.jpg',
+        sun: [10, 11, 12, 13],
+        water: [4, 5],
+        fertilizer: [1.5, 1.75]
     }
 
 ]

@@ -3,8 +3,16 @@ import Sun from './Sun'
 import Water from './Water'
 import Fertilizer from './Fertilizer'
 import Button from '@material-ui/core/Button';
-import willPlantThrive from './simulationHelpers'
+// import willPlantThrive from './simulationHelpers'
+import plants from './plantData'
+import WillThePlantThrive from './CommandPattern';
 
+
+function locatePlant(id) {
+    return plants.find(function (plant) {
+        return plant.id === id
+    })
+}
 
 class Plant extends Component {
     constructor (props) {
@@ -33,18 +41,28 @@ class Plant extends Component {
     handleSubmit = (event) => {
         
         event.preventDefault()
+        const plantId = this.props.match.params.id
+        const foundPlant = locatePlant(plantId)
+        const [sunArray, waterArray, fertArray] = [foundPlant.sun, foundPlant.water, foundPlant.fertilizer]
         const { sun, water, fertilizer } = this.state
         // analyze state data
-        const userInputConditions = [sun, water, fertilizer]
+        // const userInputConditions = [sun, water, fertilizer]
+        // clean this up 
+        const userSun = sun 
+        const userWater = water 
+        const userFert = fertilizer
         // call willPlantThrive function, that will take state 
         // for plant to thrive:
             // { sun: [4-12], water: [2-5], fert: [0.5-2] }
             // function will return thrive: true if in range
-        const plantHealth = willPlantThrive(userInputConditions)
+       const plantHealth = new WillThePlantThrive(userSun, userWater, userFert)
+    //    console.time('test1')
+       const health = plantHealth.execute(sunArray, waterArray, fertArray)
+    //    console.timeEnd('test1')
         // console.log(plantHealth)
         // if plant thrives display 'Congratulations your St. Auggy is healthy and thriving!'
         // else display failure
-        if (plantHealth) {
+        if (health) {
            this.setState({ thrived: true })
         } else {
             this.setState({ thrived: false })

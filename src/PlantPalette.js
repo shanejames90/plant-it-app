@@ -7,6 +7,7 @@ const styles = {
     root: {
         backgroundColor: 'teal',
         height: '150vh',
+        width: '70vw',
         display: 'flex',
         alignItems: 'flex-start',
         justifyContent: 'center',

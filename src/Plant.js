@@ -55,7 +55,7 @@ class Plant extends Component {
         if (this.state.thrived === true) {
             return (
                 <div>
-                    <h1>Congratulations your St. Auggy is healthy and thriving!</h1>
+                    <h1>Congratulations your {this.props.plant.name} is healthy and thriving!</h1>
                     <div>
                         <Button style={{ display: 'flex', margin: 'auto' }}
                             variant="contained"
@@ -74,7 +74,7 @@ class Plant extends Component {
         if (this.state.thrived === false) {
             return (
                 <div>
-                    <h1>Sorry, your St. Auggy is now dead, try again next season!</h1>
+                    <h1>Sorry, your {this.props.plant.name} is now dead, try again next season!</h1>
                     <Button style={{ display: 'flex', margin: 'auto' }}
                         variant="contained"
                         color="secondary"

@@ -47,10 +47,7 @@ class Plant extends Component {
         const { sun, water, fertilizer } = this.state
         // analyze state data
         // const userInputConditions = [sun, water, fertilizer]
-        // clean this up 
-        const userSun = sun 
-        const userWater = water 
-        const userFert = fertilizer
+        const [userSun, userWater, userFert] = [sun, water, fertilizer]
         // call willPlantThrive function, that will take state 
         // for plant to thrive:
             // { sun: [4-12], water: [2-5], fert: [0.5-2] }
